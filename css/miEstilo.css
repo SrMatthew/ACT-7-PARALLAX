@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "MiFuente";
+  src: url('../fuentes/VCR_OSD_MONO_1.001.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --fuente-principal: "MiFuente", Arial, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+scroll-behavior: smooth;
+
+}
+
+.contenido{
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: var(--fuente-principal);
+}
+
+#zona01{
+    background-image: url(../images/WhatsApp\ Image\ 2026-10-06\ at\ 8.38.44\ PM.jpeg);
+    
+}
+
+#zona02{
+    background-image: url(../images/WhatsApp\ Image\ 2026-10-06\ at\ 8.38.44\ PM\ \(1\).jpeg)
+
+}
+
+#zona03{
+   background-image: url(../images/WhatsApp\ Image\ 2026-10-06\ at\ 8.38.43\ PM\ \(3\).jpeg);
+ background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+
+}
+
+#zona04{
+    background-image: url(../images/WhatsApp\ Image\ 2026-10-06\ at\ 8.38.43\ PM\ \(1\).jpeg);
+ background-size: cover;
+background-position: calc(50% ) calc(50% + 50px);
+  background-repeat: no-repeat;
+
+
+}
+
+#zona05{
+    background-image: url(../images/WhatsApp\ Image\ 2026-10-06\ at\ 8.38.42\ PM\ \(1\).jpeg);
+     background-size: cover;
+background-position: calc(50% ) calc(50% + 200px);
+  background-repeat: no-repeat;
+
+}
+
+nav{
+    position: fixed;
+    left: 200PX;
+    top: 30%;
+    z-index: 100;
+    transition: 0.4s ease;
+    transform: translateX(-50%);
+
+}
+
+ul{
+    list-style: none;
+}
+
+ul a{
+    display: block;
+    color: rgb(198, 48, 156);
+    background-color: rgb(255, 203, 245);
+    text-decoration: none;
+    height: 40px;
+    border: 1px solid rgb(150, 3, 150);
+    width: 200px;
+    text-align: center;
+    padding: 10px 0;
+    transition: 0.4s ease;
+    font-family: var(--fuente-principal);
+
+}
+
+ul a:hover{
+    background-color: rgb(170, 0, 0);
+    color: rgb(150, 218, 82);
+    transform: translateX(10%);
+}
